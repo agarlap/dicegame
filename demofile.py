@@ -1,6 +1,13 @@
 
 import random
 
-dice1 = random.randrange(1, 7)
+pos = 0
 
-print("Dice 1 rolled: ", dice1)
+for x in range(1,6):
+    print("Turn #",x,":")
+    dice1 = random.randrange(1, 7)
+    print("Dice 1 rolled: ", dice1)
+    pos = pos + dice1
+    print("Position: ",pos)
+
+print("OVERALL POSITION:", pos)
